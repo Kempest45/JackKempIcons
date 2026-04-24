@@ -2,7 +2,7 @@
 <html>
     
     <head>
-    <title>Exciting shapes</title>
+    <title>Pick Your Future</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"> </script>
     <style>
             .row{
@@ -26,13 +26,15 @@
     <body>
         <script>
             var sound1 = new buzz.sound("iconsfx/alien.wav")
-            var sound2 = new buzz.sound("iconsfx/terminator.wav")
+            var sound7 = new buzz.sound("iconsfx/terminator.wav")
             var sound3 = new buzz.sound("iconsfx/tank.wav")
+            var sound2 = new buzz.sound("iconsfx/regal.wav")
 
             window.onload = function(){
                 document.getElementById('aliensicon').addEventListener('click', function () {sound1.play();})
-                document.getElementById('roboticon').addEventListener('click', function (){sound2.play();})
+                document.getElementById('roboticon').addEventListener('click', function (){sound7.play();})
                 document.getElementById('waricon').addEventListener('click', function (){sound3.play();})
+                document.getElementById('moneyicon').addEventListener('click', function (){sound2.play();})
             };
         </script>
         <div class="row">
