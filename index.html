@@ -19,42 +19,52 @@
     <style>
         body{
             background-color: rgb(66, 80, 234);
-            background-image: url();
+            background-image: url(icons/bckgrnd3.jpg);
             background-size: cover;
         }
     </style>
 
     <body>
         <script>
-            var sound1 = new buzz.sound("iconsfx/alien.wav")
-            var sound7 = new buzz.sound("iconsfx/terminator.wav")
-            var sound3 = new buzz.sound("iconsfx/tank.wav")
-            var sound2 = new buzz.sound("iconsfx/regal.wav")
+            var sound1 = new buzz.sound("iconsfx/aliensound.wav")
+            var sound7 = new buzz.sound("iconsfx/robotsound.wav")
+            var sound3 = new buzz.sound("iconsfx/warsound.wav")
+            var sound2 = new buzz.sound("iconsfx/moneysound.wav")
+            var sound4 = new buzz.sound("iconsfx/monstersound.wav")
+            var sound5 = new buzz.sound("iconsfx/pandemicsound.wav")
+            var sound6 = new buzz.sound("iconsfx/securitysound.wav")
+            var sound8 = new buzz.sound("iconsfx/spacesound.wav")
+            var sound9 = new buzz.sound("iconsfx/desertsound.wav")
 
             window.onload = function(){
                 document.getElementById('aliensicon').addEventListener('click', function () {sound1.play();})
                 document.getElementById('roboticon').addEventListener('click', function (){sound7.play();})
                 document.getElementById('waricon').addEventListener('click', function (){sound3.play();})
+                document.getElementById('monstericon').addEventListener('click', function (){sound4.play();})
+                document.getElementById('pandemicicon').addEventListener('click', function () {sound5.play();})
+                document.getElementById('securityicon').addEventListener('click', function (){sound6.play();})
+                document.getElementById('spaceicon').addEventListener('click', function (){sound8.play();})
                 document.getElementById('moneyicon').addEventListener('click', function (){sound2.play();})
+                document.getElementById('deserticon').addEventListener('click', function (){sound9.play();})
             };
         </script>
         <div class="row">
-            <div class="image-container"><img id="aliensicon" src="icons/ALIENS.png" onmouseover="this.src='icons/ALIENS.png';" onmouseout="this.src='icons/ALIENS.png';" height="200" width="170"/></div>
+            <div class="image-container"><img id="aliensicon" src="icons/ALIENS.png" onmouseover="this.src='icons/ALIENS2.png';" onmouseout="this.src='icons/ALIENS.png';" height="200" width="170"/></div>
             <div class="image-container"><img id="moneyicon" src="icons/MONEY2.png" onmouseover="this.src='icons/MONEY.png';" onmouseout="this.src='icons/MONEY2.png';" height="190" width="200"/></div>
-            <div class="image-container"><img id="waricon" src="icons/WAR.png" onmouseover="this.src='icons/WAR.png';" onmouseout="this.src='icons/WAR.png';" height="110" width="200"/></div>
+            <div class="image-container"><img id="waricon" src="icons/WAR.png" onmouseover="this.src='icons/WAR2.png';" onmouseout="this.src='icons/WAR.png';" height="110" width="200"/></div>
         </div>
 
        
         <div class="row">
-            <div class="image-container"><img id="monstericon" src="icons/MONSTER.png" height="170" width="200"/></div>
-            <div class="image-container"><img id="pandemicicon" src="icons/PANDEMIC.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="securityicon" src="icons/SECURITY.png" height="180" width="200"/></div>
+            <div class="image-container"><img id="monstericon" src="icons/MONSTER.png" onmouseover="this.src='icons/MONSTER2.png';" onmouseout="this.src='icons/MONSTER.png';" height="170" width="200"/></div>
+            <div class="image-container"><img id="pandemicicon" src="icons/PANDEMIC.png" onmouseover="this.src='icons/PANDEMIC2.png';" onmouseout="this.src='icons/PANDEMIC.png';" height="200" width="200"/></div>
+            <div class="image-container"><img id="securityicon" src="icons/SECURITY2.png" onmouseover="this.src='icons/SECURITY.png';" onmouseout="this.src='icons/SECURITY2.png';" height="180" width="200"/></div>
         </div>
 
       <div class="row">
-            <div class="image-container"><img id="roboticon" src="icons/ROBOT.png" height="200" width="130"/></div>
-            <div class="image-container"><img id="spaceicon" src="icons/SPACE.png" height="200" width="200"/></div>
-            <div class="image-container"><img id="securityicon" src="icons/PLACEHOLDER.png" height="180" width="200"/></div>
+            <div class="image-container"><img id="roboticon" src="icons/ROBOT.png" onmouseover="this.src='icons/ROBOT2.png';" onmouseout="this.src='icons/ROBOT.png';" height="200" width="130"/></div>
+            <div class="image-container"><img id="spaceicon" src="icons/SPACE.png" onmouseover="this.src='icons/SPACE2.png';" onmouseout="this.src='icons/SPACE.png';" height="200" width="190"/></div>
+            <div class="image-container"><img id="deserticon" src="icons/DESERT.png" onmouseover="this.src='icons/DESERT2.png';" onmouseout="this.src='icons/DESERT.png';" height="120" width="200"/></div>
         </div>
         
     </body>
